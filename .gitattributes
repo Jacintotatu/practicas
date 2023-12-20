@@ -1,2 +1,100 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+"""
+edad = 87
+print("La edad del abuelo es: {0:15d}".format(edad), "años")
+
+precio = 12.89
+print("El pan cuesta: {0:15.2f}".format(precio), "€")
+
+
+print("Edad del abuelo: {edad:5d}".format(edad = 89))
+print("me cago en tu padre {veces:1d}".format(veces = 40), "veses")
+
+"""
+"""
+n1 = 1258
+n2 = 8920
+print("{0:1d}{1:10d}".format(n1, n2 * 20)) #argumento posicional
+
+print("{n1:1d}{n2:10d}".format(n1 = 1234, n2 = 987))  #argumento nombrado
+
+precio = 2.23
+print("El precio del pan es: ${0:.3f}".format(precio))   #deja 3 decimales y completa con 0
+print("El precio del pan es: ${0:10.3f}".format(precio))
+print("El precio de la fruta es: ${fruta:.2f}".format(fruta = 12.5))
+print("yo tengo: {edad:1d}".format(edad = 45), "años")
+"""
+"""
+ejercicio 1*****************************************
+https://www.bigbaydata.com/ejercicios-de-condicionales-en-python/#Ejercicios_de_Condicionales_Python_para_practicar
+a = 30
+b = 10
+if(a > b):
+    print("Hola mundo")
+"""
+"""
+ejercicio 2 ****************************************
+
+edad = int(input("¿Cuantos años tienes? "))
+if(edad < 18):
+    print("No puedes pasar amigo")
+elif(edad >= 18):
+    print("Adelante amigo")
+"""
+'''
+
+ejercicio 3 ****************************************
+
+cateto1 = int(input("Introduce valor cateto a: "))
+cateto1**=2
+cateto2 = int(input("Introduce valor cateto b: "))
+cateto2**=2
+hipo = cateto1 + cateto2
+if (cateto1 <= 0 or cateto2 <= 0):
+    print("ERROOOOR")
+else:
+    print(hipo)
+'''
+
+'''
+cateto1 = int(input("Introduce valor cateto a: "))
+cateto2 = int(input("Introduce valor cateto b: "))
+
+if cateto1 <= 0 or cateto2 <= 0:
+    print("ERROR: Los catetos deben ser mayores que cero.")   
+else:
+    hipo = (cateto1**2 + cateto2**2)** 0.5      #elevar a 0.5 es como hacer la raiz cuadrada
+    print("La hipotenusa es:", hipo)
+'''
+'''
+import math                 #con el modulo math funciona sqrt
+
+cateto1 = int(input("Introduce valor cateto a: "))
+cateto2 = int(input("Introduce valor cateto b: "))
+
+if cateto1 <= 0 or cateto2 <= 0:
+    print("ERROR: Los catetos deben ser mayores que cero.")
+else:
+    hipo = math.sqrt(cateto1**2 + cateto2**2)                      #math.sqrt funcionan las funciones matematicas
+    print("La hipotenusa es:", hipo)
+'''
+"""
+
+ejercicio 4 ****************************************
+
+a = int(input("Ingresa un valor para \"a\": "))
+b = int(input("Ingresa un valor para \"b\": "))
+resultado = int(input("Elige una operacion del 1 al 4: "))
+if resultado == 1:
+    print("El resultado de la suma es ", (a + b))
+
+elif resultado == 2:
+    print("El resultado de la multiplicacion es ", (a * b))
+
+elif resultado == 3:
+    print("El resultado de la resta es ", (a - b))
+
+elif resultado == 4:
+    print("El resultado de la division es ", (a / b))
+"""
+
+ejercicio 5 ****************************************
